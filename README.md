@@ -1,39 +1,85 @@
-# Analog + Digital Oscillator Project
+# 🎛️ MayMa
 
-🚀 This repository documents my step-by-step journey of building a complete **oscillator-based electronics project**, starting from basic simulation blocks and moving towards a fully working prototype.
+**MayMa** is my personal analog synthesizer project — a fully hand-designed, TL071-based analog circuit powered by ±12 V.  
+This project documents its complete journey: from schematic design and Proteus testing to Eurorack conversion, Altium integration, and final hardware assembly.
 
-## 📌 Project Roadmap
-- [x] Stage 1: Wien Bridge Oscillator (sine wave generator) ✅
-- [ ] Stage 2: Audio Amplifier (speaker driver)
-- [ ] Stage 3: Frequency Control (potentiometer / digital control)
-- [ ] Stage 4: Visualization (LED bargraph / LCD)
-- [ ] Stage 5: Integration (mini function generator system)
-- [ ] Stage 6: PCB Layout (Altium Designer)
+---
 
-## 🛠 Tools Used
-- **Proteus** → Circuit simulation & testing
-- **Altium Designer** → PCB design (new step, key part of this project)
-- **MikroC / Arduino IDE** → For control & programming (later stages)
-- **Hardware** → Final prototyping
+## 🧭 Project Roadmap
 
-## 🌟 Key Factor
-A key factor in this project is that I am introducing a **new design tool (Altium Designer)** into my workflow.  
-This allows me to transition from **academic simulations** to **professional PCB layouts**, which will be included in later updates.
+| Stage | Description |
+|:------|:-------------|
+| **1️⃣ Schematics & Troubleshooting (Proteus + PCB)** | Designing, simulating, and debugging the full circuit in Proteus, followed by initial PCB layout and signal verification. |
+| **2️⃣ Eurorack Adaptation** | Converting the design for the Eurorack modular synth standard (±12 V rails, 3.5 mm jacks, 3U panel format). |
+| **3️⃣ Altium Integration** | Migrating the schematic and layout into Altium Designer for refined routing, labeling, and front-panel artwork integration. |
+| **4️⃣ Hardware & Assembly (Real-Life Testing)** | Building, soldering, and evaluating the physical module — measuring audio response, CV behavior, and resonance stability. |
 
-## 📸 Progress
-- Schematics and simulations (Proteus)  
-- PCB layout drafts (Altium Designer)  
-- Screenshots, notes, and explanations for each block  
+---
 
-## 🎯 Goal
-At the end, I want to have a working **oscillator & audio visualization system**, simulated, prototyped, and designed in **Altium Designer** for PCB manufacturing.
-## 🔄 Updates
-This project will be updated **often** as I make progress.  
-Each time I complete a block, I will:
-- Upload the new schematic (Proteus / Altium)
-- Add simulation screenshots
-- Update the checklist in the roadmap
-- Push changes to GitHub
+## ✨ Features
+- Pure analog design built around TL071 op-amps  
+- Modular, voltage-controlled signal path  
+- Drive and resonance shaping for expressive tone control  
+- Compatible with ±12 V power systems  
+- Ready for future Eurorack integration  
 
-Stay tuned for regular updates 🚀
+---
 
+## ⚙️ Technical Overview
+
+| Parameter | Description |
+|------------|--------------|
+| Supply rails | ±12 V |
+| Op-amp type | TL071 |
+| Input signal | 10 V p-p typical |
+| Control voltage range | 0 – 2 V |
+| Output load | ≥ 5 kΩ |
+| Current draw | < 20 mA total |
+
+---
+
+## 🧩 Connections
+
+| Jack | Function | Notes |
+|------|-----------|-------|
+| **AUDIO IN** | Main audio input |  
+| **AUDIO OUT** | Output signal | DC-blocked (1 µF) |
+| **CV IN** | Control voltage input | 100 kΩ input, clamped to ±12 V |
+
+---
+
+## 🎛️ Controls
+
+| Control | Function |
+|----------|-----------|
+| **CUT CV** | External voltage for frequency control |
+| **DRIVE (100 k)** | Adjusts input level / saturation |
+| **RESONANCE (100 k + 5 k trim)** | Sets feedback and oscillation onset |
+
+---
+
+## 🧪 Testing
+1. Power with ±12 V — verify the power LED is on.  
+2. Feed a 10 V p-p test signal into **AUDIO IN**.  
+3. Sweep **CV IN** between 0 – 9.5 V (slow triangle or DC ramp).  
+4. Observe tone and resonance behavior on the output.  
+
+---
+
+
+
+
+## ⚠️ License / Usage Notice
+> **Project Name:** MayMa  
+> **Author:** Saif AbdEssayed  
+> **Email:** abdessayedsaif@gmail.com  
+>
+> This is a personal project.  
+> Any modification, redistribution, or usage of this repository, its schematics, or documentation  
+> **requires explicit permission** from the author.  
+>
+> Please contact **Saif AbdEssayed** before using any part of this project.
+
+---
+
+© 2025 Saif AbdEssayed — All rights reserved.
