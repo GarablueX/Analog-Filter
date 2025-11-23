@@ -1,6 +1,6 @@
 # ⭐ Sponsored by PCBWay  
 This project is proudly sponsored by **PCBWay**, who supported the PCB fabrication and assembly for the MayMa analog synthesizer module.  
-👉 https://www.pcbway.com
+https://www.pcbway.com
 
 I am currently waiting for the shipment to arrive, and I will update the README with photos, documentation, and details about the assembled board once it is received.
 
