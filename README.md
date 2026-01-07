@@ -43,7 +43,7 @@ This PCB quality provides a solid foundation for reliable assembly, repeatable t
 
 ## ✨ Features
 
-* Pure analog design built around TL071 op-amps
+* Pure analog design built around TL072 op-amps
 * Modular, voltage-controlled signal path
 * Drive and resonance shaping for expressive tone control
 * Compatible with ±12 V power systems
