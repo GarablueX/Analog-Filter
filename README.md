@@ -2,6 +2,8 @@
 
 This project is proudly sponsored by **PCBWay**, who supported the PCB fabrication and assembly for the MayMa analog synthesizer module.
 [https://www.pcbway.com](https://www.pcbway.com)
+[![In Collaboration with PCBWay](https://img.shields.io/badge/Fabrication-PCBWay-blue)](https://www.pcbway.com)
+
 
 ---
 
